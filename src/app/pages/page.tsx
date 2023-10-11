@@ -7,7 +7,7 @@ export default function Page() {
   return <main>
     <Navigation />
     {
-      DUMMY_TEMPLATES.map(t => <div><Link href={`/pages/${t.id}`} >{t.name}</Link></div>)
+      DUMMY_TEMPLATES.map(t => <div key={t.id} ><Link href={`/pages/${t.id}`} >{t.name}</Link></div>)
     }
   </main>
 }

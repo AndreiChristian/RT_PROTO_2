@@ -1,3 +1,7 @@
+import PageComponent from "../_page/PageComponent";
+
 export default function Page({ params }: { params: { pageId: string } }) {
-  return <div>My Post: {params.pageId}</div>
+  return (
+    <PageComponent pageId={params.pageId} />
+  )
 }
