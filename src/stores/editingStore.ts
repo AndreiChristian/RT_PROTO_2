@@ -17,15 +17,21 @@ interface EditingStoreState {
   },
   toggleTwitterProfile: () => void
   setTwitterProfile: (newValue: string) => void
+  //
+
 }
 
 export const useEditingStore = create<EditingStoreState>()((set) => ({
-  title: "DummyTitle",
+  title: "I am just a mere title",
   setTitle: (newTitle: string) => set(() => ({ title: newTitle })),
-  subtitle: "DummySubtitle",
+  subtitle: `And I am just a humble subtitle. And we are talking to you! Yeah you
+  got that right. We are here to be edited 
+  and for you to add something cooler like your name and a statement about you!`,
   setSubtitle: (newValue: string) => set(() => ({ subtitle: newValue })),
   paragraphOne: "Dummy P 1",
   setParagraphOne: (newValue: string) => set(() => ({ paragraphOne: newValue })),
+
+
   // twitter profile shit
   twitter_Profile: {
     value: "my_twitter profile",

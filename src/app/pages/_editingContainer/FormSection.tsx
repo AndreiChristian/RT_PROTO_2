@@ -10,7 +10,7 @@ export default function FormSection({ label, value, setValue }: FormSectionProps
   return <label>
     <div>{label}</div>
     <input type="text" onChange={e => setValue(e.target.value)} value={value}
-      className="bg-zinc-700"
+      className="bg-zinc-300 outline-none "
     />
   </label>
 

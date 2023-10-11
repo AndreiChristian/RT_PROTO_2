@@ -16,9 +16,7 @@ export default function PageComponent({ pageId }: PageComponentProps) {
     case "1":
       return <Template_One_Component title={title} subtitle={subtitle} paragraphOne={paragraphOne} />
     case "2":
-      return <Template_Two_Component
-        title={title} subtitle={subtitle} paragraphOne={paragraphOne}
-      />
+      return <Template_Two_Component title={title} subtitle={subtitle} paragraphOne={paragraphOne} />
     default:
       return <h1>404</h1>
   }

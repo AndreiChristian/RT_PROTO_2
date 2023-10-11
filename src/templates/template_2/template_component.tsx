@@ -5,7 +5,7 @@ export default function Template_Two_Component(
 ) {
 
   return <main className="bg-red-500" >
-    <h1>This is page 2</h1>
+    <h1 className="underline" >This is page 2</h1>
     <h1>{title}</h1>
     <h2>{subtitle}</h2>
     <p>{paragraphOne}</p>

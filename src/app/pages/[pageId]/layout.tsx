@@ -6,8 +6,8 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
-  return <main>
+  return <>
     <Container />
     {children}
-  </main>
+  </>
 }
